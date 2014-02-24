@@ -476,6 +476,7 @@
 				5DA2F3C718BAA02F00E08138 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DA2F3C818BAA02F00E08138 /* Build configuration list for PBXNativeTarget "Bulls EyeTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +485,7 @@
 				5DA2F3CA18BAA02F00E08138 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
