@@ -38,14 +38,8 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)showAlert {
-    int difference;
-    if (_currentValue > _targetValue) {
-        difference = _currentValue - _targetValue; } else if (_targetValue > _currentValue) {
-            difference = _targetValue - _currentValue; } else {
-                difference = 0; }
-    NSString *message = [NSString stringWithFormat:
-                         @"The value of the slider is: %d\nThe target value is: %d\nThe difference is: %d",
-                         _currentValue, _targetValue, difference];
+    int difference = abs(_targetValue - _currentValue); int points = 100 - difference;
+    NSString *message = [NSString stringWithFormat:@"You scored %d points", points];
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Hello, World!" message:message
                                                        delegate:nil
                                               cancelButtonTitle:@"OK" otherButtonTitles:nil];
