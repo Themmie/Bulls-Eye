@@ -18,14 +18,14 @@
     int _targetValue;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    _currentValue = self.slider.value;
-    _targetValue = 1 + arc4random_uniform(100);
-	// Do any additional setup after loading the view, typically from a nib.
-}
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self startNewRound]; }
+- (void)startNewRound {
+    _targetValue = 1 + arc4random_uniform(100); _currentValue = 50;
+    self.slider.value = _currentValue;
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -38,6 +38,7 @@
                                                        delegate:nil
                                               cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alertView show];
+    [self startNewRound];
 }
 - (IBAction)sliderMoved:(UISlider *)slider {
     _currentValue = lroundf(slider.value);
