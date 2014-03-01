@@ -102,8 +102,9 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="scoreLabel" destination="Qqb-LZ-OEh" id="hTT-Jw-Gm8"/>
                         <outlet property="slider" destination="i8y-d8-QZy" id="cHo-Ve-rrx"/>
-                        <outlet property="targetLabel" destination="RTi-qB-uJx" id="mvO-Mp-uHJ"/>
+                        <outlet property="targetLabel" destination="RTi-qB-uJx" id="4Zl-iQ-Jlz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

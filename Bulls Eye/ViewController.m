@@ -16,6 +16,7 @@
 {
     int _currentValue;
     int _targetValue;
+    int _score;
    
 }
 
@@ -30,6 +31,8 @@
     self.slider.value = _currentValue;}
 - (void)updateLabels {
         self.targetLabel.text = [NSString stringWithFormat:@"%d", _targetValue];
+        self.scoreLabel.text = [NSString stringWithFormat:@"%d", _score];
+    
     }
 
 - (void)didReceiveMemoryWarning
@@ -38,7 +41,9 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)showAlert {
-    int difference = abs(_targetValue - _currentValue); int points = 100 - difference;
+    int difference = abs(_targetValue - _currentValue);
+    int points = 100 - difference;
+    _score += points;
     NSString *message = [NSString stringWithFormat:@"You scored %d points", points];
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Hello, World!" message:message
                                                        delegate:nil
