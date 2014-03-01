@@ -44,11 +44,20 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)showAlert {
-    int difference = abs(_targetValue - _currentValue);
-    int points = 100 - difference;
-    _score += points;
-    NSString *message = [NSString stringWithFormat:@"You scored %d points", points];
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Hello, World!" message:message
+    int difference = abs(_targetValue - _currentValue);int points = 100 - difference; _score += points;
+    NSString *title;
+    if (difference == 0) { title = @"Perfect!";
+    } else if (difference < 5) {
+        title = @"You almost had it!";
+    } else if (difference < 10) {
+        title = @"Pretty good!";
+    } else {
+        title = @"Not even close...";
+    }
+    NSString *message = [NSString stringWithFormat:
+                         @"You scored %d points", points];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
+                                                        message:message
                                                        delegate:nil
                                               cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alertView show];
