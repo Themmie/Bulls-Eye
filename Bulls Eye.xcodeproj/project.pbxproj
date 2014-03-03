@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D8A6D1418C544B8007A158F /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8A6D1318C544B8007A158F /* AboutViewController.m */; };
 		5DA2F39418BAA02F00E08138 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2F39318BAA02F00E08138 /* Foundation.framework */; };
 		5DA2F39618BAA02F00E08138 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2F39518BAA02F00E08138 /* CoreGraphics.framework */; };
 		5DA2F39818BAA02F00E08138 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2F39718BAA02F00E08138 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D8A6D1218C544B8007A158F /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		5D8A6D1318C544B8007A158F /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		5DA2F39018BAA02F00E08138 /* Bulls Eye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bulls Eye.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA2F39318BAA02F00E08138 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5DA2F39518BAA02F00E08138 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +120,8 @@
 				5DA2F3A518BAA02F00E08138 /* Main_iPhone.storyboard */,
 				5DA2F3AB18BAA02F00E08138 /* ViewController.h */,
 				5DA2F3AC18BAA02F00E08138 /* ViewController.m */,
+				5D8A6D1218C544B8007A158F /* AboutViewController.h */,
+				5D8A6D1318C544B8007A158F /* AboutViewController.m */,
 				5DA2F3AE18BAA02F00E08138 /* Images.xcassets */,
 				5DA2F39A18BAA02F00E08138 /* Supporting Files */,
 			);
@@ -251,6 +256,7 @@
 			files = (
 				5DA2F3AD18BAA02F00E08138 /* ViewController.m in Sources */,
 				5DA2F3A418BAA02F00E08138 /* AppDelegate.m in Sources */,
+				5D8A6D1418C544B8007A158F /* AboutViewController.m in Sources */,
 				5DA2F3A018BAA02F00E08138 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
