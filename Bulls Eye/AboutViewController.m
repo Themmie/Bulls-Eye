@@ -14,6 +14,10 @@
 
 @implementation AboutViewController
 
+- (IBAction)close {
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
